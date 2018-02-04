@@ -15,10 +15,20 @@
 
   <h2>Test</h2>
   
-  <table border='1px'>
+  <button onclick='addRow()'>
+  
+  <table id='myTable' border='1px'>
     <tr>
       <th>Start</th> <th>End</th> <th>Ija</th> <th>Byonje</th> <th>Rest</th> <th>Wongeum</th>
     </tr>
+    <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
   </table>
 </body>
   
+<script>
+  function addRow(){
+    var table = document.getElementById('myTable');
+    table.insetRow(0);
+    
+  }
+</script>
