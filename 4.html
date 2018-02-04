@@ -3,6 +3,27 @@
 <head>
   <title>WEB1 - html</title>
   <meta charset="utf-8">
+  
+  <style>
+  	input{
+    	width: 95%;
+    }
+  	#myTable{
+    	border-collapse: collapse;
+        width: 100%;
+    }
+  	#myTable th, td{
+    	border: 1px solid #ddd;
+
+    }
+    #myTable th{
+    	background-color: #4CAF50; 
+        color: white;
+        padding: 5px;
+    }
+
+  </style>
+  
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
@@ -17,18 +38,37 @@
   
   <button onclick='addRow()'>Add Row</button>
   
-  <table id='myTable' border='1px'>
+  <table id='myTable'>
     <tr>
-      <th>Start</th> <th>End</th> <th>Ija</th> <th>Byonje</th> <th>Rest</th> <th>Wongeum</th>
+      <th>No</th> <th>Start</th> <th>End</th> <th>Ija</th> <th>Byonje</th> <th>Rest</th> <th>Wongeum</th>
     </tr>
-    <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
   </table>
 </body>
   
 <script>
+  var table = document.getElementById('myTable');
+
   function addRow(){
-    var table = document.getElementById('myTable');
-    table.insetRow(0);
+    var newRow = table.insertRow(table.rows.length);
+    for(var i=0; i< document.getElementsByTagName('th').length; i++){
+    	var newCell = newRow.insertCell(i);
+        if(i==0) newCell.innerHTML=table.rows.length-1;
+        else if(i==1){
+        	newCell.innerHTML="<input type='text' name='start'></input>";
+        }else if(i==2){
+		var ei = table.rows.length-1;
+		newCell.innerHTML="<input type='text' name='end' oninput='document.getElementsByName('start')[ei].value= evalue + 1'></input>";
+        }else newCell.innerHTML="<input type='text'></input>";
+
+    }
     
   }
+  
+  function setStartDate(ei, eValue){
+  	alert(ei);
+	document.getElementsByName('start')[ei].value= evalue + 1;
+  	
+  }
+  
 </script>
+</html>
