@@ -1,0 +1,10 @@
+<h2>변제충당</h2>
+
+<button onclick="addRow()">행 추가</button>
+
+<table id="myTable">
+  <tr>
+    <th>순번</th> <th>시점</th> <th>종점</th> <th>이자</th> <th>변제액</th> <th>변제잔액(이자잔액)</th> <th>원금</th>
+  </tr>
+  <script> addRow(); </script>
+</table>

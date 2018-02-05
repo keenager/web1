@@ -1,0 +1,5 @@
+<h2>독촉절차비용 중 법무사보수 비용 산정</h2>
+
+<p>청구금액 <input type="text" id="input"  value=""> <button onclick="calDok()">계산</button>  </p>
+<p>적정 보수액 = <input type="text" id="output" value="" readonly="true"> </p>
+<p>제출대행료 = 20,000원</p>

@@ -1,0 +1,7 @@
+<h2>Profile</h2>
+
+<ul>
+  <li>name: Jeon Yong-su</li>
+  <li>gender: male</li>
+  <li>birth date: 1984. 2. 25.</li>
+</ul>

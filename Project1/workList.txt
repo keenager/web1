@@ -1,0 +1,6 @@
+<script src="http://localhost/project1/Work/Work.js"></script>
+<ul>
+  <li><a href="http://localhost/project1/index.php?id=Work&field=byon">변제충당</a></li>
+  <li><a href="http://localhost/project1/index.php?id=Work&field=dok">독촉절차비용</a></li>
+  <li><a href="http://localhost/project1/index.php?id=Work&field=etc">기타 등등</a></li>
+</ul>

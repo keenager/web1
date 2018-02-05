@@ -1,0 +1,4 @@
+<li><a href="http://localhost/project1/index.php?id=Profile">Profile</a></li>
+<li><a href="http://localhost/project1/index.php?id=Schedule">Schedule</a></li>
+<li><a href="http://localhost/project1/index.php?id=Diary">Diary</a></li>
+<li><a href="http://localhost/project1/index.php?id=Work">Work</a></li>
